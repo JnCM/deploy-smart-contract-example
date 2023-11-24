@@ -1,5 +1,7 @@
 # Implantação de um Contrato Inteligente na Blockchain - Exemplo com Web3 e Python
 
+Repositório contendo os arquivos necessários para implantar um contrato inteligente em uma Blockchain, utilizando Python e a biblioteca Web3.
+
 ## Requisitos
 
 Recomenda-se a criação de um ambiente virtual em Python para evitar erros de versões ao executar este projeto. Com o ambiente virtual criado e ativado, execute o seguinte comando para instalar as dependências necessárias:
@@ -27,14 +29,14 @@ Após isso, guarde tanto o Bytecode quanto o ABI para serem utilizados nas vari�
 As variáveis de ambiente são importantes, pois mascaram dados sensíveis ao invés de coloca-los diretamente no código. Crie um arquivo `.env` no mesmo local que o arquivo `main.py` e defina as seguintes variáveis:
 
 ```env
-URL_PROVIDER= # URL de conexão RPC com a Blockchain
-ACC_PUBLIC_KEY= # Chave pública da conta
-ACC_PRIVATE_KEY= # Chave privada da conta (opcional para este exemplo)
-CONTRACT_BYTECODE= # Bytecode do contrato inteligente compilado
-CONTRACT_ABI= # ABI do contrato inteligente compilado
+URL_PROVIDER=... # URL de conexão RPC com a Blockchain
+ACC_PUBLIC_KEY=... # Chave pública da conta
+ACC_PRIVATE_KEY=... # Chave privada da conta (opcional para este exemplo)
+CONTRACT_BYTECODE=... # Bytecode do contrato inteligente compilado
+CONTRACT_ABI=... # ABI do contrato inteligente compilado
 ```
 
-Exemplo das variáveis de ambiente preenchidas:
+<!-- Exemplo das variáveis de ambiente preenchidas:
 
 ```env
 URL_PROVIDER=http://127.0.0.1:7545 # Conexão padrão do Ganache
@@ -42,7 +44,7 @@ ACC_PUBLIC_KEY=0xE7E9B917D5ffaCF42Db48101Af52Af8619d32b78
 ACC_PRIVATE_KEY=0xe8d04041532c27ba0e80a3e0f935e98458924283091b57965ed90806cbfee5cf
 CONTRACT_BYTECODE=60806040523480156200001157600080fd5b50604...
 CONTRACT_ABI=[{"inputs":[],"stateMutability":"nonpayable"...
-```
+``` -->
 
 ## Execução
 
